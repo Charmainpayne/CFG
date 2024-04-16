@@ -7,7 +7,7 @@ Hi there! :wave: I'm Charmain :smiley: , and I'm excited to share my journey to 
 
 #### We are Team Charina and we are _Coding Melodies, Crafting Experiences_
 
-I'm working with [Arina](https://github.com/astroari/a4). Our [project](Insert link) is an amazing Concert ticket platform API project and we are building our own API. This is our 4th assignment on the [CodeFirstGirls](https://github.com/CodeFirstGirls) Foundation Degree - Software1 Group.
+I'm working with [Arina](https://github.com/astroari/a4). Our project is an amazing Concert ticket platform API project and we are building our own API. This is our 4th assignment on the [CodeFirstGirls](https://github.com/CodeFirstGirls) Foundation Degree - Software1 Group.
 
 My previous projects include:
 
