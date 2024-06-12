@@ -1,0 +1,93 @@
+﻿1.1 The deque module is part of which python library?
+The deque module is part of the collections library in Python's library. 
+
+
+1.2 What are 2 differences that distinguish a tree from a graph?
+
+
+A tree is an acyclic data structure, so it does not contain any cycles or loops. It is impossible to start from a node, traverse the edges, and end up at the same node. In contrast, graphs can contain cycles, allowing you to follow the edges from a node and eventually return to it.
+
+
+In a tree, each node (except the root) has exactly one parent node. This parent-child relationship forms a hierarchical structure. The graphs do not have this strict parent-child relationship. Nodes in a graph can have multiple connections to other nodes, and there is no inherent hierarchical structure.
+
+
+1.3 Give the definitions of time complexity and space complexity
+
+
+Time complexity measures how an algorithm's running time scales with its input size. It quantifies the amount of time an algorithm takes to complete its execution as the input size increases. Time complexity is commonly expressed using Big O notation, which represents the worst-case scenario or the upper bound of the algorithm's running time.
+
+
+Space complexity measures how much additional memory an algorithm requires to execute and complete its task. It quantifies the amount of memory or space required by an algorithm in terms of auxiliary data structures, variables, and other memory needs, excluding the space required for the input itself.
+
+
+Space complexity is also typically expressed using Big O notation, which describes the worst-case scenario or the upper bound of the algorithm's memory requirements.
+
+
+Both time complexity and space complexity are important when evaluating the efficiency and scalability of an algorithm. Algorithms with lower time and space complexities are generally preferred, as they can handle larger inputs more efficiently and require fewer computational resources.
+
+
+1.4 Describe the bubble sort algorithm and its complexity. What is guaranteed at the end of the first
+Pass?
+
+
+Bubble sort is like that kid's game where you line up a bunch of people by height, but instead of people, you're dealing with a list of numbers.
+
+
+ Here's how it goes:
+You start by looking at the first two numbers in the list.
+If the first number is bigger than the second, you swap them around.
+Then you move on to the next pair of numbers and repeat step 2.
+You keep doing this until you reach the end of the list.
+After one pass through the list, the biggest number will have "bubbled up" to the end.
+But the rest of the list might still be a mess, so you go through the whole thing again (except for the last number, since it's already in place).
+You keep repeating this process until the entire list is sorted from smallest to largest.
+
+
+Bubble sort can be considered as efficient inefficient as this algorithm consists of:
+
+
+Time complexity:
+
+
+Best Case: O(n) if the list is sorted then the algorithm only to cycle once.
+Average Case: O(n2) The algorithm usually requires multiple passes through the list, with the number of comparisons and swaps growing quadratically with the list size.
+Wost Case: O(n2) If the list is in reverse order, the algorithm will require a maximum number of comparisons and swaps, resulting in a quadratic time complexity.
+
+
+Space Complexity:
+
+
+Bubble sort is an "in-place" sorting algorithm with a space complexity of O(1) as it only needs a constant amount of extra space for temporary variables.
+
+
+Guaranteed
+
+
+When the first cycle through the list is done, the biggest number in the list will be at the very end. This is due to each large remaining number bubbles up.
+
+1.5 Explain what LIFO and FIFO are and how each works in practice with a named data structure
+
+
+LIFO
+Stands for Last in, First out. For example, the last person in a club will be the first one the bouncer will through out. This is how stack data structures works.
+
+
+FIFO
+Stand for First in First out. For example, a person in a rollercoaster queue. The person who goes on to the rolllercoaster will be the first to ride.This is how queue data structures works. A queue would be used when you need to keep track of the order things were added but you always work with the oldest first.
+
+
+1.6 What is a Balanced Binary Tree and what would be the best root? Walkthrough how you search using this structure.
+
+
+A real world exampl of a balanced binary tree is a family of two adults and 2 children. The heights of the two child subtrees don’t differ by too much so they’re considered as roughly equal.
+
+Now the best root for a balanced binary tree, i will choose a value that’s in the middle of all the values. I.e.a string of 7 numbers (1,3,5,7,9,11,13) i would choose the 4 one as it’s equal numbers each side. On the left side are smaller numbers and the second half has larger numbers.
+
+
+Searching in a balanced binary tree is like playing a gamer of higher or lower with the root value. Lets say i’m looking for 11 in my example tree and the root value is 7. I would start by comparing 11 to the root value. Since 11 is higher i know my next edge would be on the right subtree. Then i would compare 11 to the root of the right subtree which in this case is 9. 11 is higher than 9 so i would continue going to the right.
+
+
+I keep doing the higher or lower comparison until i find the value i’m looking for or hit a node with no children.
+
+
+Following these steps cuts the remaining search are roughly in half so i can find things quickly.
